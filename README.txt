@@ -1,6 +1,9 @@
-init
-oggy_playwithnumbers
+TRIPOLIS VIETNAM
 
-Test Push 
+OGGY [TEAM]
 
--DatPham | tripolis Viet Nam
+THANH TUAN
+DIEU LINH
+BA DAT
+
+Oggy_Team | Tripolis VietNam
