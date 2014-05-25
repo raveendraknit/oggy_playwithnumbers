@@ -1,9 +1,7 @@
-TRIPOLIS VIETNAM
+I can't RUN project PaywithNumber because missing something (maybe Bundle)
+so, I was created new project (miniproject just for test) and i can run on port 3000 localhost.
 
-OGGY [TEAM]
 
-THANH TUAN
-DIEU LINH
-BA DAT
+everybody ! Please Test ! 
 
-Oggy_Team | Tripolis VietNam
+DatPham
