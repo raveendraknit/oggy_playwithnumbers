@@ -56,15 +56,40 @@ playwithNumberApp.controller("playgameController", function($scope, $window){
 });
 
 
-playwithNumberApp.controller('NumberCtrl', function($scope){
+playwithNumberApp.controller('NumberCtrl', function($scope, $window){
+
+    $scope.numb1 = generateARandomNumber(10);
+    $scope.numb2 = generateARandomNumber(10);
+    $scope.numb3 = generateARandomNumber(20);
 
 
-    $scope.numb1 = generateARandomNumber(9);
-    $scope.numb2 = generateARandomNumber(9);
-    $scope.numb3 = generateARandomNumber(18);
+    $scope.rs = checkIfSumIsEqual($scope.numb1, $scope.numb2, $scope.numb3);
 
+    $scope.returnTrue = function () {
 
-    //$scope.rs = checkIfSumIsEqual($scope.numb1, $scope.numb2, $scope.numb3)
+        $scope.result = true;
+        console.log($scope.rs);
+        if($scope.result == $scope.rs){
+            $scope.numb1 = generateARandomNumber(10);
+            $scope.numb2 = generateARandomNumber(10);
+            $scope.numb3 = generateARandomNumber(20);
+        }
+        else{
+            alert("stop")
+        }
+    };
 
+    $scope.returnFalse = function () {
+        $scope.result = false;
+        console.log($scope.rs);
+        if($scope.rs == $scope.result){
+            $scope.numb1 = generateARandomNumber(10);
+            $scope.numb2 = generateARandomNumber(10);
+            $scope.numb3 = generateARandomNumber(20);
+        }
+        else{
+            alert("stop")
+        }
+    };
 
 });
