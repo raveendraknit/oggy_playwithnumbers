@@ -1,4 +1,4 @@
-<div class="LandingPage text-center" style="border: 1px solid #FFFFBF;background: #111;">
+<div data-ng-controller="NumberCtrl" class="LandingPage text-center" style="border: 1px solid #FFFFBF;background: #111;">
     <div class="row">
         <h1><strong>PLAY WITH NUMBERS</strong></h1>
     </div>
@@ -6,7 +6,7 @@
 
         <label class="number">
             <span>
-                <strong>1</strong>
+                <strong>{{ numb1 }}</strong>
             </span>
         </label>
         <label class="number">
@@ -16,7 +16,7 @@
         </label>
         <label class="number">
             <span>
-                <strong>1</strong>
+                <strong>{{ numb2 }}</strong>
             </span>
         </label>
         <label class="number">
@@ -26,7 +26,7 @@
         </label>
         <label class="number">
             <span>
-                <strong>2</strong>
+                <strong>{{ numb3 }}</strong>
             </span>
         </label>
 

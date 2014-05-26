@@ -15,16 +15,56 @@
 //= require bootstrap
 //= require angular
 //= require angular-resource
+//= require utilities
+
 
 //= require_tree .
 
 
-
-
 //Angular JS
-var playwithnumbersApp = angular.module("playwithnumbersApp", ['ngResource']);
+var playwithNumberApp = angular.module('PlaywithNumberApp',['ngResource']);
 
 
-playwithnumbersApp.controller("demoController", function($scope){
+
+playwithNumberApp.controller("landingController", function($scope, $timeout, $window){
+
+    $scope.timeInMs = 0;
+    var countUp = function() {
+        $scope.timeInMs+= 1;
+        $timeout(countUp, 1000);
+
+        if($scope.timeInMs == 2)
+        {
+            $scope.timeInMs = 0;
+            $window.location.href = '/main'
+        }
+    }
+    $timeout(countUp, 500);
+
 
 })
+
+
+
+playwithNumberApp.controller("playgameController", function($scope, $window){
+
+    $scope.letsgo = function(){
+        $window.location.href = '/inside'
+    }
+
+
+});
+
+
+playwithNumberApp.controller('NumberCtrl', function($scope){
+
+
+    $scope.numb1 = generateARandomNumber(9);
+    $scope.numb2 = generateARandomNumber(9);
+    $scope.numb3 = generateARandomNumber(18);
+
+
+    //$scope.rs = checkIfSumIsEqual($scope.numb1, $scope.numb2, $scope.numb3)
+
+
+});
