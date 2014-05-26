@@ -26,5 +26,5 @@ var playwithnumbersApp = angular.module("playwithnumbersApp", ['ngResource']);
 
 
 playwithnumbersApp.controller("demoController", function($scope){
-  
+
 })

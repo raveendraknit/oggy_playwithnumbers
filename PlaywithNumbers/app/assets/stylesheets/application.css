@@ -28,3 +28,35 @@ h1, i{
     height: 600px;
     margin: 50px auto;
 }
+
+.number{
+    color: wheat;
+    font-size: 75px;
+    float: left;
+    margin-left: 53px;
+}
+button{
+    width: 145px;
+    height: 90px;
+    margin-left: 20px !important;
+    margin-top: 40px !important;
+}
+button > i {
+    font-size: 40px;
+}
+.play-icon-game{
+     width: 200px;
+     height: 100px;
+     margin-left: 20px;
+     margin-top: 100px !important;
+ }
+
+.btn-main{
+    width: 75px;
+    height: 45px;
+}
+.btn-main  > i {
+    font-size: 20px;
+    color: #730E15 !important;
+}
+

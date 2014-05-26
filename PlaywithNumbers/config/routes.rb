@@ -3,6 +3,10 @@ PlaywithNumbers::Application.routes.draw do
 
   root :to => 'landing#index'
 
+  match 'main' => 'main#index'
+
+  match 'inside' => 'inside#index'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
