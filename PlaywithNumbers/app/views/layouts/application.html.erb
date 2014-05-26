@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html data-ng-app="playwithnumbersApp" data-ng-cloak="">
 <head>
-  <title>PlaywithNumbers</title>
+  <title>[OGGY] - Play with Number</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
-<body>
+<body ng-view="">
 
 <%= yield %>
 

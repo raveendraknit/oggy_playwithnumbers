@@ -14,5 +14,17 @@
 //= require jquery_ujs
 //= require bootstrap
 //= require angular
+//= require angular-resource
 
 //= require_tree .
+
+
+
+
+//Angular JS
+var playwithnumbersApp = angular.module("playwithnumbersApp", ['ngResource']);
+
+
+playwithnumbersApp.controller("demoController", function($scope){
+  
+})

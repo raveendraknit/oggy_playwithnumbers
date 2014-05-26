@@ -13,6 +13,18 @@
  *= require font-awesome
 
 @import "font-awesome";
-
  *= require_tree .
  */
+
+
+body{
+    background: #333333 !important;
+}
+h1, i{
+    color: #ffffff !important;
+}
+.LandingPage{
+    width: 500px;
+    height: 600px;
+    margin: 50px auto;
+}
