@@ -78,7 +78,7 @@ playwithNumberApp.controller('NumberController', function($scope, $window, $time
         $scope.timeInMs++;
         $timeout(countUp, 1000);
         if ($scope.timeInMs == 1) {
-            $("div#progressbarcustomize").css({"width":"100%"});
+            $("div#progressbarcustomize").css({"width":"750%"});
         }
         if ($scope.timeInMs == 2) {
             $("div#progressbarcustomize").css({"width":"0%"});
