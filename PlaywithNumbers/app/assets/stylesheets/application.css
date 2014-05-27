@@ -31,9 +31,10 @@ h1, i{
 
 .number{
     color: wheat;
-    font-size: 75px;
+    font-size: 63px;
     float: left;
-    margin-left: 49px;
+    margin: 0 18px;
+    padding-top: 35px;
 }
 button{
     width: 145px;
