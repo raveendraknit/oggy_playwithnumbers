@@ -67,9 +67,8 @@ playwithNumberApp.controller('NumberController', function($scope, $window, $time
     $scope.numb1 = generateARandomNumber(5);
     $scope.numb2 = generateARandomNumber(8);
     $scope.numb3 = generateARandomNumber(17);
-    $scope.timeInMs = 0;
+    $("div#progressbarcustomize").css({"width":"100%"});
     var loadprogress = function(){
-        $scope.timeInMs = 0;
         var countUp = function () {
             $scope.timeInMs += 1;
             $timeout(countUp, 1000);
@@ -77,19 +76,22 @@ playwithNumberApp.controller('NumberController', function($scope, $window, $time
                 $("div#progressbarcustomize").css({"width":"100%"});
             }
             if ($scope.timeInMs == 2) {
+                $("div#progressbarcustomize").css({"width":"50%"});
+            }
+            if ($scope.timeInMs == 3) {
                 $("div#progressbarcustomize").css({"width":"0%"});
-                alert("YOU LOSE")
+                alert(1)
+                $window.location.reload();
             }
         };
         $timeout(countUp, 500);
     };
 
-    loadprogress();
-
     $scope.returnTrue = function () {
-        loadprogress();
         $scope.Operation2numbers = ($scope.numb1 + $scope.numb2);
         if ($scope.Operation2numbers == $scope.numb3) {
+            $scope.timeInMs = 0;
+            loadprogress()
             $scope.numb1 = generateARandomNumber(6);
             $scope.numb2 = generateARandomNumber(9);
             $scope.numb3 = generateARandomNumber(14);
@@ -100,9 +102,10 @@ playwithNumberApp.controller('NumberController', function($scope, $window, $time
         }
     };
     $scope.returnFalse = function () {
-        loadprogress();
         $scope.Operation2numbers = ($scope.numb1 + $scope.numb2);
         if($scope.Operation2numbers != $scope.numb3){
+            $scope.timeInMs = 0;
+            loadprogress()
             $scope.numb1 = generateARandomNumber(9);
             $scope.numb2 = generateARandomNumber(9);
             $scope.numb3 = generateARandomNumber(18);
