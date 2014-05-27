@@ -1,4 +1,4 @@
-<div data-ng-controller="NumberCtrl" class="LandingPage text-center" style="border: 1px solid #FFFFBF;background: #111;">
+<div data-ng-controller="NumberController" class="LandingPage text-center" style="border: 1px solid #FFFFBF;background: #111;">
     <div class="row">
         <h1><strong>PLAY WITH NUMBERS</strong></h1>
     </div>
@@ -34,6 +34,12 @@
     <div class="row">
         <button class="btn btn-success" ng-click="returnTrue()"><i class="fa fa-thumbs-o-up"></i> </button>
         <button class="btn btn-danger" ng-click="returnFalse()"><i class="fa fa-thumbs-o-down"></i> </button>
+    </div>
+
+    <div class="row" style="margin-top: 128px;margin-left: -1px;margin-right: -1px;">
+        <div class="progress progress-striped active ">
+            <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" id="progressbarcustomize"><span class="sr-only">45% Complete</span></div>
+        </div>
     </div>
 
 </div>

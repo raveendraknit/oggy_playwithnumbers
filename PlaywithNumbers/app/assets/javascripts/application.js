@@ -17,7 +17,6 @@
 //= require angular-resource
 //= require utilities
 
-
 //= require_tree .
 
 
@@ -36,7 +35,7 @@ playwithNumberApp.controller("landingController", function($scope, $timeout, $wi
         }
     };
     $timeout(countUp, 500);
-})
+});
 
 playwithNumberApp.controller("playgameController", function($scope, $window, $timeout){
     $scope.status = false;
@@ -46,7 +45,6 @@ playwithNumberApp.controller("playgameController", function($scope, $window, $ti
         var countUp = function () {
             $scope.timeInMs += 1;
             $timeout(countUp, 1000);
-
             if ($scope.timeInMs == 1) {
                 $("div#progressbarcustomize").css({"width":"18%"});
             }
@@ -60,50 +58,57 @@ playwithNumberApp.controller("playgameController", function($scope, $window, $ti
                 $("div#progressbarcustomize").css({"width":"100%"});
                 $window.location.href = '/inside'
             }
-        }
+        };
         $timeout(countUp, 500);
-
-
     }
-
-
 });
 
-playwithNumberApp.controller('NumberCtrl', function($scope, $window){
+playwithNumberApp.controller('NumberController', function($scope, $window, $timeout){
+    $scope.numb1 = generateARandomNumber(5);
+    $scope.numb2 = generateARandomNumber(8);
+    $scope.numb3 = generateARandomNumber(17);
+    $scope.timeInMs = 0;
+    var loadprogress = function(){
+        $scope.timeInMs = 0;
+        var countUp = function () {
+            $scope.timeInMs += 1;
+            $timeout(countUp, 1000);
+            if ($scope.timeInMs == 1) {
+                $("div#progressbarcustomize").css({"width":"100%"});
+            }
+            if ($scope.timeInMs == 2) {
+                $("div#progressbarcustomize").css({"width":"0%"});
+                alert("YOU LOSE")
+            }
+        };
+        $timeout(countUp, 500);
+    };
 
-    $scope.numb1 = generateARandomNumber(10);
-    $scope.numb2 = generateARandomNumber(10);
-    $scope.numb3 = generateARandomNumber(20);
-
-
-    $scope.rs = checkIfSumIsEqual($scope.numb1, $scope.numb2, $scope.numb3);
+    loadprogress();
 
     $scope.returnTrue = function () {
-
-        $scope.result = true;
-        console.log($scope.rs);
-        if($scope.result == $scope.rs){
-            alert("stop")
+        loadprogress();
+        $scope.Operation2numbers = ($scope.numb1 + $scope.numb2);
+        if ($scope.Operation2numbers == $scope.numb3) {
+            $scope.numb1 = generateARandomNumber(6);
+            $scope.numb2 = generateARandomNumber(9);
+            $scope.numb3 = generateARandomNumber(14);
         }
-        else{
-            $scope.numb1 = generateARandomNumber(10);
-            $scope.numb2 = generateARandomNumber(10);
-            $scope.numb3 = generateARandomNumber(20);
-
+        else
+        {
+                alert("wrong");
         }
     };
-
     $scope.returnFalse = function () {
-        $scope.result = false;
-        console.log($scope.rs);
-        if($scope.rs == $scope.result){
-            $scope.numb1 = generateARandomNumber(10);
-            $scope.numb2 = generateARandomNumber(10);
-            $scope.numb3 = generateARandomNumber(20);
+        loadprogress();
+        $scope.Operation2numbers = ($scope.numb1 + $scope.numb2);
+        if($scope.Operation2numbers != $scope.numb3){
+            $scope.numb1 = generateARandomNumber(9);
+            $scope.numb2 = generateARandomNumber(9);
+            $scope.numb3 = generateARandomNumber(18);
         }
         else{
-            alert("stop")
+            alert("right");
         }
     };
-
 });
