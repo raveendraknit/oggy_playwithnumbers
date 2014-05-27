@@ -24,30 +24,21 @@
 //Angular JS
 var playwithNumberApp = angular.module('PlaywithNumberApp',['ngResource']);
 
-
-
 playwithNumberApp.controller("landingController", function($scope, $timeout, $window){
-
     $scope.timeInMs = 0;
     var countUp = function() {
         $scope.timeInMs+= 1;
         $timeout(countUp, 1000);
-
         if($scope.timeInMs == 2)
         {
             $scope.timeInMs = 0;
             $window.location.href = '/main'
         }
-    }
+    };
     $timeout(countUp, 500);
-
-
 })
 
-
-
 playwithNumberApp.controller("playgameController", function($scope, $window, $timeout){
-
     $scope.status = false;
     $scope.timeInMs = 0;
     $scope.letsgo = function() {
@@ -59,17 +50,14 @@ playwithNumberApp.controller("playgameController", function($scope, $window, $ti
             if ($scope.timeInMs == 1) {
                 $("div#progressbarcustomize").css({"width":"18%"});
             }
-
             if ($scope.timeInMs == 2) {
                 $("div#progressbarcustomize").css({"width":"38%"});
             }
-
             if ($scope.timeInMs == 3) {
                 $("div#progressbarcustomize").css({"width":"78%"});
             }
-
             if ($scope.timeInMs == 4) {
-                $("div#progressbarcustomize").css({"width":"98%"});
+                $("div#progressbarcustomize").css({"width":"100%"});
                 $window.location.href = '/inside'
             }
         }
@@ -80,7 +68,6 @@ playwithNumberApp.controller("playgameController", function($scope, $window, $ti
 
 
 });
-
 
 playwithNumberApp.controller('NumberCtrl', function($scope, $window){
 
@@ -96,12 +83,13 @@ playwithNumberApp.controller('NumberCtrl', function($scope, $window){
         $scope.result = true;
         console.log($scope.rs);
         if($scope.result == $scope.rs){
+            alert("stop")
+        }
+        else{
             $scope.numb1 = generateARandomNumber(10);
             $scope.numb2 = generateARandomNumber(10);
             $scope.numb3 = generateARandomNumber(20);
-        }
-        else{
-            alert("stop")
+
         }
     };
 
