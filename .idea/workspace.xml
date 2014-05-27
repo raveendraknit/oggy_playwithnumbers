@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5074b67c-cb99-414e-b56d-1a6482c3e2b0" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PlaywithNumbers/app/assets/stylesheets/application.css" afterPath="$PROJECT_DIR$/PlaywithNumbers/app/assets/stylesheets/application.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PlaywithNumbers/app/assets/javascripts/application.js" afterPath="$PROJECT_DIR$/PlaywithNumbers/app/assets/javascripts/application.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/oggy_playwithnumbers.iml" afterPath="$PROJECT_DIR$/.idea/oggy_playwithnumbers.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="oggy_playwithnumbers.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,8 +29,8 @@
       <file leaf-file-name="application.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PlaywithNumbers/app/assets/stylesheets/application.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="656" max-vertical-offset="1598">
-              <caret line="46" column="16" selection-start-line="46" selection-start-column="16" selection-end-line="46" selection-end-column="16" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="391" max-vertical-offset="1615">
+              <caret line="33" column="17" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -70,8 +69,8 @@
       <file leaf-file-name="application.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/PlaywithNumbers/app/assets/javascripts/application.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.15620214" vertical-offset="1122" max-vertical-offset="2363">
-              <caret line="89" column="8" selection-start-line="89" selection-start-column="8" selection-end-line="89" selection-end-column="8" />
+            <state vertical-scroll-proportion="0.33843797" vertical-offset="731" max-vertical-offset="2397">
+              <caret line="73" column="56" selection-start-line="73" selection-start-column="56" selection-end-line="73" selection-end-column="56" />
               <folding />
             </state>
           </provider>
@@ -110,8 +109,8 @@
         <option value="$PROJECT_DIR$/PlaywithNumbers/app/views/main/index.html" />
         <option value="$PROJECT_DIR$/PlaywithNumbers/app/views/inside/index.html" />
         <option value="$PROJECT_DIR$/PlaywithNumbers/config/routes.rb" />
-        <option value="$PROJECT_DIR$/PlaywithNumbers/app/assets/stylesheets/application.css" />
         <option value="$PROJECT_DIR$/PlaywithNumbers/app/views/gameover/index.html" />
+        <option value="$PROJECT_DIR$/PlaywithNumbers/app/assets/stylesheets/application.css" />
         <option value="$PROJECT_DIR$/PlaywithNumbers/app/assets/javascripts/application.js" />
       </list>
     </option>
@@ -667,16 +666,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/PlaywithNumbers/app/assets/stylesheets/application.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="656" max-vertical-offset="1598">
-          <caret line="46" column="16" selection-start-line="46" selection-start-column="16" selection-end-line="46" selection-end-column="16" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="391" max-vertical-offset="1615">
+          <caret line="33" column="17" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PlaywithNumbers/app/assets/javascripts/application.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15620214" vertical-offset="1122" max-vertical-offset="2363">
-          <caret line="89" column="8" selection-start-line="89" selection-start-column="8" selection-end-line="89" selection-end-column="8" />
+        <state vertical-scroll-proportion="0.33843797" vertical-offset="731" max-vertical-offset="2397">
+          <caret line="73" column="56" selection-start-line="73" selection-start-column="56" selection-end-line="73" selection-end-column="56" />
           <folding />
         </state>
       </provider>
