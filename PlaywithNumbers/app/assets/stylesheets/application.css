@@ -66,3 +66,24 @@ button > i {
     color: #730E15 !important;
 }
 
+.countdown{
+    text-align: left;
+    position: fixed;
+    width: 295px;
+    height: 160px;
+    right: 0;
+    top:50px;
+    border: 1px solid #FFFFBF;
+
+}
+.countdown p{
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.score-table{
+    height: 79px;
+    background: #111111;
+    padding: 20px 15px;
+}

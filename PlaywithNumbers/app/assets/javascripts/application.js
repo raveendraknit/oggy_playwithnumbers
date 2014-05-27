@@ -68,7 +68,6 @@ playwithNumberApp.controller('NumberController', function($scope, $window, $time
     $scope.numb1 = generateARandomNumber(9);
     $scope.numb2 = generateARandomNumber(9);
     $scope.numb3 = generateARandomNumber(15);
-    $("div#progressbarcustomize").css({"width":"100%"});
 
     $scope.timeInMs = 0;
     var countUp = function() {
