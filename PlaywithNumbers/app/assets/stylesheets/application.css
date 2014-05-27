@@ -51,8 +51,8 @@ button > i {
      margin-bottom: -85px !important;
  }
 .play-again-icon-game{
-    width: 300px;
-    height: 100px;
+    width: 120px;
+    height: 80px;
     margin-left: 20px;
     margin-bottom: -85px !important;
 }
@@ -79,7 +79,7 @@ button > i {
 .countdown p{
     color: #ffffff;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 27px;
 }
 
 .score-table{

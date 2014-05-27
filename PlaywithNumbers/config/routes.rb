@@ -7,7 +7,7 @@ PlaywithNumbers::Application.routes.draw do
 
   match 'inside' => 'inside#index'
 
-  match 'gameover' => 'gameover#index'
+  match 'gameover/:params' => 'gameover#index'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
