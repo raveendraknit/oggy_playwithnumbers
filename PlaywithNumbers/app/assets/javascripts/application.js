@@ -34,7 +34,7 @@ playwithNumberApp.controller("landingController", function($scope, $timeout, $wi
             $window.location.href = '/main'
         }
     };
-    $timeout(countUp, 500);
+    $timeout(countUp, 1000);
 });
 
 playwithNumberApp.controller("playgameController", function($scope, $window, $timeout){
@@ -63,54 +63,62 @@ playwithNumberApp.controller("playgameController", function($scope, $window, $ti
     }
 });
 
-playwithNumberApp.controller('NumberController', function($scope, $window, $timeout){
-    $scope.numb1 = generateARandomNumber(5);
-    $scope.numb2 = generateARandomNumber(8);
-    $scope.numb3 = generateARandomNumber(17);
+playwithNumberApp.controller('NumberController', function($scope, $window, $timeout, $interval){
+
+    $scope.numb1 = generateARandomNumber(9);
+    $scope.numb2 = generateARandomNumber(9);
+    $scope.numb3 = generateARandomNumber(15);
     $("div#progressbarcustomize").css({"width":"100%"});
-    var loadprogress = function(){
-        var countUp = function () {
-            $scope.timeInMs += 1;
-            $timeout(countUp, 3000);
-            if ($scope.timeInMs == 1) {
-                $("div#progressbarcustomize").css({"width":"100%"});
-            }
-            if ($scope.timeInMs == 2) {
-                $("div#progressbarcustomize").css({"width":"50%"});
-            }
-            if ($scope.timeInMs == 3) {
-                $("div#progressbarcustomize").css({"width":"0%"});
-                $window.location.href = '/gameover'
-            }
-        };
+
+    $scope.timeInMs = 0;
+    var countUp = function() {
+        $scope.timeInMs++;
         $timeout(countUp, 1000);
+        if ($scope.timeInMs == 1) {
+            $("div#progressbarcustomize").css({"width":"100%"});
+        }
+        if ($scope.timeInMs == 2) {
+            $("div#progressbarcustomize").css({"width":"0%"});
+            $scope.timeInMs = 0;
+            $window.location.href = '/gameover'
+
+        }
     };
+    $timeout(countUp, 1000);
+
 
     $scope.returnTrue = function () {
+        $scope.timeInMs = 0;
         $scope.Operation2numbers = ($scope.numb1 + $scope.numb2);
         if ($scope.Operation2numbers == $scope.numb3) {
-            $scope.timeInMs = 0;
-            loadprogress()
-            $scope.numb1 = generateARandomNumber(6);
-            $scope.numb2 = generateARandomNumber(9);
-            $scope.numb3 = generateARandomNumber(14);
-        }
-        else
-        {
-                alert("wrong");
-        }
-    };
-    $scope.returnFalse = function () {
-        $scope.Operation2numbers = ($scope.numb1 + $scope.numb2);
-        if($scope.Operation2numbers != $scope.numb3){
-            $scope.timeInMs = 0;
-            loadprogress()
             $scope.numb1 = generateARandomNumber(9);
             $scope.numb2 = generateARandomNumber(9);
             $scope.numb3 = generateARandomNumber(18);
         }
-        else{
-            alert("right");
+        else
+        {
+            $window.location.href = '/gameover'
         }
     };
+    $scope.returnFalse = function () {
+        $scope.timeInMs = 0;
+        $scope.Operation2numbers = ($scope.numb1 + $scope.numb2);
+        if($scope.Operation2numbers != $scope.numb3){
+            $scope.numb1 = generateARandomNumber(9);
+            $scope.numb2 = generateARandomNumber(9);
+            $scope.numb3 = generateARandomNumber(17);
+        }
+        else{
+            $window.location.href = '/gameover'
+        }
+    };
+});
+
+
+playwithNumberApp.controller("gameoverController", function($scope, $window){
+
+    $scope.playagain = function(){
+        $window.location.href = '/inside'
+    }
+
 });

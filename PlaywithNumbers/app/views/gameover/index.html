@@ -1,4 +1,4 @@
-<div data-ng-controller="NumberController" class="LandingPage text-center" style="border: 1px solid #FFFFBF;background: #111;">
+<div data-ng-controller="gameoverController" class="LandingPage text-center" style="border: 1px solid #FFFFBF;background: #111;">
     <div class="row">
         <h1><strong>PLAY WITH NUMBERS</strong></h1>
     </div>
@@ -8,7 +8,7 @@
     </div>
 
     <div class="row">
-        <button class="play-again-icon-game btn btn-warning" >
+        <button class="play-again-icon-game btn btn-warning" ng-click="playagain();">
             <i class="fa fa-play"></i>
             <p>Play Again</p>
         </button>
