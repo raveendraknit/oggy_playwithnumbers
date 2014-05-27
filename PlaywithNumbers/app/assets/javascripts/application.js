@@ -71,7 +71,7 @@ playwithNumberApp.controller('NumberController', function($scope, $window, $time
     var loadprogress = function(){
         var countUp = function () {
             $scope.timeInMs += 1;
-            $timeout(countUp, 1000);
+            $timeout(countUp, 3000);
             if ($scope.timeInMs == 1) {
                 $("div#progressbarcustomize").css({"width":"100%"});
             }
@@ -80,11 +80,10 @@ playwithNumberApp.controller('NumberController', function($scope, $window, $time
             }
             if ($scope.timeInMs == 3) {
                 $("div#progressbarcustomize").css({"width":"0%"});
-                alert(1)
-                $window.location.reload();
+                $window.location.href = '/gameover'
             }
         };
-        $timeout(countUp, 500);
+        $timeout(countUp, 1000);
     };
 
     $scope.returnTrue = function () {

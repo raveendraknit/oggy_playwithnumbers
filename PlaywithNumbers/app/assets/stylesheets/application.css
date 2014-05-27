@@ -50,6 +50,12 @@ button > i {
      margin-left: 20px;
      margin-bottom: -85px !important;
  }
+.play-again-icon-game{
+    width: 300px;
+    height: 100px;
+    margin-left: 20px;
+    margin-bottom: -85px !important;
+}
 
 .btn-main{
     width: 75px;
