@@ -46,10 +46,36 @@ playwithNumberApp.controller("landingController", function($scope, $timeout, $wi
 
 
 
-playwithNumberApp.controller("playgameController", function($scope, $window){
+playwithNumberApp.controller("playgameController", function($scope, $window, $timeout){
 
-    $scope.letsgo = function(){
-        $window.location.href = '/inside'
+    $scope.status = false;
+    $scope.timeInMs = 0;
+    $scope.letsgo = function() {
+        $scope.status = true;
+        var countUp = function () {
+            $scope.timeInMs += 1;
+            $timeout(countUp, 1000);
+
+            if ($scope.timeInMs == 1) {
+                $("div#progressbarcustomize").css({"width":"18%"});
+            }
+
+            if ($scope.timeInMs == 2) {
+                $("div#progressbarcustomize").css({"width":"38%"});
+            }
+
+            if ($scope.timeInMs == 3) {
+                $("div#progressbarcustomize").css({"width":"78%"});
+            }
+
+            if ($scope.timeInMs == 4) {
+                $("div#progressbarcustomize").css({"width":"98%"});
+                $window.location.href = '/inside'
+            }
+        }
+        $timeout(countUp, 500);
+
+
     }
 
 

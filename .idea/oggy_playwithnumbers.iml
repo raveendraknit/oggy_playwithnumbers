@@ -6,15 +6,12 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" scope="PROVIDED" name="actionmailer (v3.2.15, ruby-1.9.3-p545) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="actionpack (v3.2.15, ruby-1.9.3-p545) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="actionpack (v3.2.18, ruby-1.9.3-p545) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="actionpack (v4.1.1, ruby-1.9.3-p545) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="actionview (v4.1.1, ruby-1.9.3-p545) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="activemodel (v3.2.15, ruby-1.9.3-p545) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="activemodel (v3.2.18, ruby-1.9.3-p545) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="activerecord (v3.2.15, ruby-1.9.3-p545) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="activeresource (v3.2.15, ruby-1.9.3-p545) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="activesupport (v3.2.15, ruby-1.9.3-p545) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="activesupport (v3.2.18, ruby-1.9.3-p545) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="activesupport (v4.1.1, ruby-1.9.3-p545) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="angularjs-rails (v1.2.16, ruby-1.9.3-p545) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="arel (v3.0.3, ruby-1.9.3-p545) [gem]" level="application" />
@@ -45,7 +42,6 @@
     <orderEntry type="library" scope="PROVIDED" name="rack-test (v0.6.2, ruby-1.9.3-p545) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rails (v3.2.15, ruby-1.9.3-p545) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="railties (v3.2.15, ruby-1.9.3-p545) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="railties (v3.2.18, ruby-1.9.3-p545) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="railties (v4.1.1, ruby-1.9.3-p545) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rake (v10.3.2, ruby-1.9.3-p545) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rdoc (v3.12.2, ruby-1.9.3-p545) [gem]" level="application" />
