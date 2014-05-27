@@ -81,13 +81,13 @@ playwithNumberApp.controller('NumberController', function($scope, $window, $time
         if ($scope.timeInMs == 2) {
             $("div#progressbarcustomize").css({"width":"0%"});
             $scope.timeInMs = 0;
-            $window.location.href = '/gameover/null'
+            $window.location.href = '/gameover/'+$scope.current_score;
 
         }
     };
     $timeout(countUp, 1000);
 
-
+//handle
     $scope.returnTrue = function () {
 
         $scope.timeInMs = 0;
@@ -103,6 +103,7 @@ playwithNumberApp.controller('NumberController', function($scope, $window, $time
             $window.location.href = '/gameover/'+$scope.current_score;
         }
     };
+    //
     $scope.returnFalse = function () {
 
         $scope.timeInMs = 0;
