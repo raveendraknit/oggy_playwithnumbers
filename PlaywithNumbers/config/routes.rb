@@ -1,5 +1,10 @@
 PlaywithNumbers::Application.routes.draw do
 
+  scope :path => 'api' do
+
+    resources :userlists
+  end
+
 
   root :to => 'landing#index'
 
