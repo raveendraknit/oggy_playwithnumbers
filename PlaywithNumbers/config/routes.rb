@@ -8,12 +8,16 @@ PlaywithNumbers::Application.routes.draw do
     end
   end
 
+  resources :inside do
+    collection do
+      get 'index'
+    end
+  end
 
   root :to => 'landing#index'
 
   match 'main' => 'main#index'
 
-  match 'inside' => 'inside#index'
 
   match 'gameover/:params' => 'gameover#index'
 

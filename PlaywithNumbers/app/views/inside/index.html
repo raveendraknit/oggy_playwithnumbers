@@ -44,7 +44,9 @@
         <div class="score-table">
         <br>
              <p>BEST SCORE: </>
-             <p>200</p>
+            <% @userlists.each do |bestscore| %>
+             <p><%= bestscore.score %></p>
+            <% end %>
         </div>
         <div class="score-table">
         <br>

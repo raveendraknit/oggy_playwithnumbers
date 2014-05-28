@@ -88,3 +88,79 @@ button > i {
     background: #111111;
     padding: 20px 15px;
 }
+
+/*Popup-score*/
+.popup-score{
+    width: 400px;
+    height: 0px;
+    top:0px;
+    bottom: 0px;
+    left: 365px;
+    visibility: hidden;
+
+
+}
+.popup-close{
+    position: absolute;
+    background: #730E15;
+    border: 2px solid #ffffff;
+    border-radius: 40px;
+    right: 0;
+    top: -10px;
+    right: -10px;
+    visibility: hidden;
+}
+.btn-show{
+    width: 40px;
+    height: 40px;
+    visibility: visible;
+}
+.popup-on{
+    position: absolute;
+    visibility: visible;
+    width: 400px;
+    height: 550px;
+    top: 75px;
+    left: 365px;
+    background: #ffffff;
+    transition: All 0.3s linear;
+
+}
+
+/*Popup-help*/
+.popup-help{
+    width: 400px;
+    height: 0px;
+    top:0px;
+    bottom: 0px;
+    left: 370px;
+    visibility: hidden;
+
+
+}
+.popup-help-close{
+    position: absolute;
+    background: #730E15;
+    border: 2px solid #ffffff;
+    border-radius: 40px;
+    right: 0;
+    top: -10px;
+    right: -10px;
+    visibility: hidden;
+}
+.btn-help-show{
+    width: 40px;
+    height: 40px;
+    visibility: visible;
+}
+.popup-help-on{
+    position: absolute;
+    visibility: visible;
+    width: 400px;
+    height: 550px;
+    top: 75px;
+    left: 370px;
+    background: #ffffff;
+    transition: All 0.3s linear;
+
+}

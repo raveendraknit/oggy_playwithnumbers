@@ -38,27 +38,38 @@
         </button>
     </div>
 
-
-
-
     <div class="row" style="margin-left: 60px !important; margin-right: 60px !important; margin-top: 130px; margin-bottom: -170px" ng-hide="status == false">
         <div class="progress progress-striped active ">
             <div class="progress-bar" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" id="progressbarcustomize"><span class="sr-only">45% Complete</span></div>
         </div>
     </div>
 
-
     <div class="row" style="height: 110px; margin-top: 145px;">
 
-        <button class="btn-main btn btn-default">
+        <button class="btn-main btn btn-default" ng-click="addclasspopup()">
             <i class="fa fa-list"></i>
         </button>
-        <button class="btn-main btn btn-default">
+        <button class="btn-main btn btn-default" ng-click="addclasspopuphelp()">
             <i class="fa fa-question"></i>
         </button>
         <button class="btn-main btn btn-default">
-            <i class="fa fa-facebook"></i>
+            <i class="fa fa-thumbs-up"></i>
         </button>
+    </div>
+    <div class="popup-score">
+            <div class="popup-close" ng-click="removeClasspopup()">
+                <i class="fa fa-minus" style="font-size: 25px;margin-top: 9px;"></i>
+            </div>
 
+        SCORE
+
+    </div>
+
+    <div class="popup-help">
+        <div class="popup-help-close" ng-click="removeClasspopuphelp()">
+            <i class="fa fa-minus" style="font-size: 25px;margin-top: 9px;"></i>
+        </div>
+
+        HELP
     </div>
 </div>

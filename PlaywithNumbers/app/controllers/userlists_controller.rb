@@ -3,7 +3,6 @@ class UserlistsController < ApplicationController
   # GET /userlists.json
   def index
     @userlists = Userlist.all
-
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @userlists }
@@ -89,4 +88,8 @@ class UserlistsController < ApplicationController
       format.json { render json: @userlists }
     end
   end
+
+
+
+
 end

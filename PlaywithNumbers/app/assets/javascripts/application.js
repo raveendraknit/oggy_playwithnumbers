@@ -38,6 +38,7 @@ playwithNumberApp.controller("landingController", function($scope, $timeout, $wi
 });
 
 playwithNumberApp.controller("playgameController", function($scope, $window, $timeout){
+
     $scope.status = false;
     $scope.timeInMs = 0;
     $scope.letsgo = function() {
@@ -60,16 +61,37 @@ playwithNumberApp.controller("playgameController", function($scope, $window, $ti
             }
         };
         $timeout(countUp, 500);
-    }
+    };
+    //Popup score
+    $scope.addclasspopup = function(){
+        $( "div.popup-score" ).addClass("popup-on");
+        $( "div.popup-close").addClass("btn-show");
+    };
+
+    $scope.removeClasspopup = function(){
+        $( "div.popup-score" ).removeClass("popup-on");
+        $( "div.popup-close").removeClass("btn-show");
+    };
+    //popup help
+    $scope.addclasspopuphelp = function(){
+        $( "div.popup-help" ).addClass("popup-help-on");
+        $( "div.popup-help-close").addClass("btn-help-show");
+    };
+
+    $scope.removeClasspopuphelp = function(){
+        $( "div.popup-help" ).removeClass("popup-help-on");
+        $( "div.popup-help-close").removeClass("btn-help-show");
+    };
+
 });
 
 playwithNumberApp.controller('NumberController', function($scope, $window, $timeout){
 
     $scope.current_score = 0;
 
-    $scope.numb1 = generateARandomNumber(9);
-    $scope.numb2 = generateARandomNumber(5);
-    $scope.numb3 = generateARandomNumber(18);
+    $scope.numb1 = generateARandomNumber(1,9);
+    $scope.numb2 = generateARandomNumber(4,6);
+    $scope.numb3 = generateARandomNumber(1,18);
 
     $("div#progressbarcustomize").css({"width":"100%"});
 
@@ -78,13 +100,14 @@ playwithNumberApp.controller('NumberController', function($scope, $window, $time
         $scope.timeInMs++;
         $timeout(countUp, 1000);
         if ($scope.timeInMs == 1) {
-            $("div#progressbarcustomize").css({"width":"750%"});
+            $("div#progressbarcustomize").css({"width":"100%"});
         }
-        if ($scope.timeInMs == 2) {
+        else if ($scope.timeInMs == 2) {
             $("div#progressbarcustomize").css({"width":"0%"});
-            $scope.timeInMs = 0;
+        }
+        else{
+            $("div#progressbarcustomize").css({"width":"0%"});
             $window.location.href = '/gameover/'+$scope.current_score;
-
         }
     };
     $timeout(countUp, 1000);
@@ -96,9 +119,9 @@ playwithNumberApp.controller('NumberController', function($scope, $window, $time
         $scope.Operation2numbers = ($scope.numb1 + $scope.numb2);
         if ($scope.Operation2numbers == $scope.numb3) {
             $scope.current_score ++;
-            $scope.numb1 = generateARandomNumber(9);
-            $scope.numb2 = generateARandomNumber(9);
-            $scope.numb3 = generateARandomNumber(18);
+            $scope.numb1 = generateARandomNumber(2,8);
+            $scope.numb2 = generateARandomNumber(5,9);
+            $scope.numb3 = generateARandomNumber(1,18);
         }
         else
         {
@@ -112,9 +135,9 @@ playwithNumberApp.controller('NumberController', function($scope, $window, $time
         $scope.Operation2numbers = ($scope.numb1 + $scope.numb2);
         if($scope.Operation2numbers != $scope.numb3){
             $scope.current_score ++;
-            $scope.numb1 = generateARandomNumber(9);
-            $scope.numb2 = generateARandomNumber(9);
-            $scope.numb3 = generateARandomNumber(18);
+            $scope.numb1 = generateARandomNumber(3,7);
+            $scope.numb2 = generateARandomNumber(5,9);
+            $scope.numb3 = generateARandomNumber(1,18);
         }
         else{
             $window.location.href = '/gameover/'+$scope.current_score;

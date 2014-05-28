@@ -1,5 +1,5 @@
-function generateARandomNumber(MaxValue){
-  return Math.floor(Math.random()*MaxValue);
+function generateARandomNumber(min, max){
+    return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
 function checkIfSumIsEqual(numb1, numb2, sum){
