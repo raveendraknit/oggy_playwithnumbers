@@ -4,6 +4,7 @@ PlaywithNumbers::Application.routes.draw do
     resources :userlists do
       collection do
         get 'topten'
+        post 'savescore'
       end
     end
   end
