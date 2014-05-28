@@ -161,9 +161,21 @@ playwithNumberApp.controller("gameoverController", function($scope, $window){
         $scope.score = url.toString().split("/")[4];
     }
 
-    $scope.savescore = function () {
+     $scope.savescore = function () {
+
             alert("save")
-    }
+            $.ajax({
+                type: "POST",
+                url: "/api/userlists/savescore.json",
+                data: { name: $("#newUser").val(), score: $("#score").val()},
+                success: function (e) {
+                    alert(e.result.name + ":" + e.result.score);
+                },
+                error: function () {
+                    alert("error");
+                }
+            });
+        }
 
     $scope.sharefacebook = function(){
             alert("share")

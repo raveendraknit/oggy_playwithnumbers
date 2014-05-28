@@ -89,6 +89,16 @@ class UserlistsController < ApplicationController
     end
   end
 
+  def savescore
+    Userlist.create(name: params[:name],  score: params[:score]);
+    
+
+    
+    render json: { result: {name:params[:name], score:params[:score] }}
+    
+
+    
+  end
 
 
 
