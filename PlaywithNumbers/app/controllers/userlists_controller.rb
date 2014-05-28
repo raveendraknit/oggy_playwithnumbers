@@ -80,4 +80,13 @@ class UserlistsController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  def topten
+    @userlists = Userlist.find(:all, :order => 'score desc, created_at asc', :limit => 10)
+
+    respond_to do |format|
+      format.html # index.html.erb
+      format.json { render json: @userlists }
+    end
+  end
 end

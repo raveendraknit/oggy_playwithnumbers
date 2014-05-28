@@ -1,8 +1,11 @@
 PlaywithNumbers::Application.routes.draw do
 
   scope :path => 'api' do
-
-    resources :userlists
+    resources :userlists do
+      collection do
+        get 'topten'
+      end
+    end
   end
 
 
