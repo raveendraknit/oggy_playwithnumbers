@@ -16,10 +16,7 @@ PlaywithNumbers::Application.routes.draw do
   end
 
   root :to => 'landing#index'
-
   match 'main' => 'main#index'
-
-
   match 'gameover/:params' => 'gameover#index'
 
   # The priority is based upon order of creation:
