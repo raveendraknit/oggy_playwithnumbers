@@ -2,15 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5074b67c-cb99-414e-b56d-1a6482c3e2b0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PlaywithNumbers/app/assets/images/ogg_bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PlaywithNumbers/public/images_ogg/ogg_bg.png" />
-      <change type="DELETED" beforePath="E:\oggy_playwithnumbers\PlaywithNumbers\app\assets\stylesheets\scaffolds.css.scss" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PlaywithNumbers/app/assets/stylesheets/background-ingame.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PlaywithNumbers/app/assets/stylesheets/ogg_bg.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PlaywithNumbers/app/assets/stylesheets/application.css" afterPath="$PROJECT_DIR$/PlaywithNumbers/app/assets/stylesheets/application.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PlaywithNumbers/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/PlaywithNumbers/app/views/layouts/application.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PlaywithNumbers/app/assets/javascripts/application.js" afterPath="$PROJECT_DIR$/PlaywithNumbers/app/assets/javascripts/application.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PlaywithNumbers/app/views/gameover/index.html" afterPath="$PROJECT_DIR$/PlaywithNumbers/app/views/gameover/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PlaywithNumbers/app/views/inside/index.html" afterPath="$PROJECT_DIR$/PlaywithNumbers/app/views/inside/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PlaywithNumbers/app/views/landing/index.html" afterPath="$PROJECT_DIR$/PlaywithNumbers/app/views/landing/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PlaywithNumbers/app/views/main/index.html" afterPath="$PROJECT_DIR$/PlaywithNumbers/app/views/main/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PlaywithNumbers/app/controllers/main_controller.rb" afterPath="$PROJECT_DIR$/PlaywithNumbers/app/controllers/main_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="oggy_playwithnumbers.iws" />
@@ -37,9 +37,11 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PlaywithNumbers/app/views/main/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.846154" vertical-offset="219" max-vertical-offset="1411">
-              <caret line="31" column="10" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
+            <state vertical-scroll-proportion="-5.8846154" vertical-offset="408" max-vertical-offset="1411">
+              <caret line="33" column="47" selection-start-line="33" selection-start-column="47" selection-end-line="33" selection-end-column="47" />
               <folding>
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#strong#0;n#h1#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#strong#0;n#span#0;n#label#0;n#div#1;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#strong#0;n#span#0;n#label#1;n#div#1;n#div#0;n#!!top" expanded="true" />
@@ -50,11 +52,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="application.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PlaywithNumbers/app/assets/stylesheets/application.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.62974685" vertical-offset="95" max-vertical-offset="3145">
-              <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="425" max-vertical-offset="3298">
+              <caret line="41" column="17" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -63,8 +65,8 @@
       <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PlaywithNumbers/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="340">
-              <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+            <state vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="340">
+              <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -93,10 +95,14 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PlaywithNumbers/app/views/gameover/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="527">
-              <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+            <state vertical-scroll-proportion="-8.5" vertical-offset="0" max-vertical-offset="527">
+              <caret line="13" column="133" selection-start-line="13" selection-start-column="133" selection-end-line="13" selection-end-column="133" />
               <folding>
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#strong#0;n#h1#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#strong#0;n#h1#0;n#div#1;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#2;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#strong#0;n#h1#0;n#div#2;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#0;n#div#2;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#input#1;n#div#0;n#!!top" expanded="true" />
               </folding>
@@ -104,11 +110,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="application.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/PlaywithNumbers/app/assets/javascripts/application.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2407" max-vertical-offset="3060">
-              <caret line="161" column="5" selection-start-line="160" selection-start-column="8" selection-end-line="161" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.710443" vertical-offset="2407" max-vertical-offset="3060">
+              <caret line="185" column="0" selection-start-line="185" selection-start-column="0" selection-end-line="185" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -117,11 +123,29 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PlaywithNumbers/app/views/inside/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.115385" vertical-offset="406" max-vertical-offset="1054">
-              <caret line="47" column="38" selection-start-line="47" selection-start-column="38" selection-end-line="47" selection-end-column="38" />
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1054">
+              <caret line="0" column="140" selection-start-line="0" selection-start-column="140" selection-end-line="0" selection-end-column="140" />
               <folding>
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#strong#0;n#h1#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#strong#0;n#span#0;n#label#0;n#div#1;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#3;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#1;n#div#0;n#div#4;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PlaywithNumbers/app/views/landing/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.2692308" vertical-offset="0" max-vertical-offset="272">
+              <caret line="5" column="50" selection-start-line="5" selection-start-column="50" selection-end-line="5" selection-end-column="50" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#strong#0;n#h1#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -161,7 +185,6 @@
         <option value="$PROJECT_DIR$/PlaywithNumbers/app/controllers/pages_controller.rb" />
         <option value="$PROJECT_DIR$/PlaywithNumbers/app/assets/javascripts/pages.js" />
         <option value="$PROJECT_DIR$/PlaywithNumbers/app/assets/javascripts/main.js" />
-        <option value="$PROJECT_DIR$/PlaywithNumbers/app/views/landing/index.html" />
         <option value="$PROJECT_DIR$/PlaywithNumbers/app/models/userlist.rb" />
         <option value="$PROJECT_DIR$/PlaywithNumbers/app/controllers/gameover_controller.rb" />
         <option value="$PROJECT_DIR$/PlaywithNumbers/app/controllers/inside_controller.rb" />
@@ -170,12 +193,13 @@
         <option value="$PROJECT_DIR$/PlaywithNumbers/app/assets/javascripts/utilities.js" />
         <option value="$PROJECT_DIR$/PlaywithNumbers/app/controllers/main_controller.rb" />
         <option value="$PROJECT_DIR$/PlaywithNumbers/app/assets/stylesheets/scaffolds.css.scss" />
+        <option value="$PROJECT_DIR$/PlaywithNumbers/app/views/layouts/application.html.erb" />
+        <option value="$PROJECT_DIR$/PlaywithNumbers/app/views/main/index.html" />
+        <option value="$PROJECT_DIR$/PlaywithNumbers/app/views/landing/index.html" />
         <option value="$PROJECT_DIR$/PlaywithNumbers/app/views/gameover/index.html" />
         <option value="$PROJECT_DIR$/PlaywithNumbers/app/views/inside/index.html" />
-        <option value="$PROJECT_DIR$/PlaywithNumbers/app/assets/javascripts/application.js" />
-        <option value="$PROJECT_DIR$/PlaywithNumbers/app/views/main/index.html" />
-        <option value="$PROJECT_DIR$/PlaywithNumbers/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/PlaywithNumbers/app/assets/stylesheets/application.css" />
+        <option value="$PROJECT_DIR$/PlaywithNumbers/app/assets/javascripts/application.js" />
       </list>
     </option>
   </component>
@@ -327,7 +351,85 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="oggy_playwithnumbers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="oggy_playwithnumbers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PlaywithNumbers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="layouts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="oggy_playwithnumbers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="oggy_playwithnumbers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PlaywithNumbers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="landing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="oggy_playwithnumbers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="oggy_playwithnumbers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PlaywithNumbers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="inside" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -462,6 +564,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\oggy_playwithnumbers\PlaywithNumbers\app\assets\stylesheets" />
       <recent name="E:\oggy_playwithnumbers\PlaywithNumbers\app\assets\images" />
       <recent name="E:\oggy_playwithnumbers\PlaywithNumbers\public\images_ogg" />
     </key>
@@ -651,7 +754,11 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="510">
           <caret line="20" column="84" selection-start-line="20" selection-start-column="71" selection-end-line="20" selection-end-column="84" />
           <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#strong#0;n#h1#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#strong#0;n#h1#0;n#div#1;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#2;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#strong#0;n#h1#0;n#div#2;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#div#2;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#1;n#div#0;n#!!top" expanded="true" />
           </folding>
@@ -662,6 +769,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="272">
           <caret line="5" column="64" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="64" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#strong#0;n#h1#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -694,7 +806,11 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="510">
           <caret line="20" column="84" selection-start-line="20" selection-start-column="71" selection-end-line="20" selection-end-column="84" />
           <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#strong#0;n#h1#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#strong#0;n#h1#0;n#div#1;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#2;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#strong#0;n#h1#0;n#div#2;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#div#2;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#1;n#div#0;n#!!top" expanded="true" />
           </folding>
@@ -705,6 +821,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="272">
           <caret line="5" column="64" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="64" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#strong#0;n#h1#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -737,7 +858,11 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="510">
           <caret line="20" column="84" selection-start-line="20" selection-start-column="71" selection-end-line="20" selection-end-column="84" />
           <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#strong#0;n#h1#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#strong#0;n#h1#0;n#div#1;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#2;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#strong#0;n#h1#0;n#div#2;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#div#2;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#1;n#div#0;n#!!top" expanded="true" />
           </folding>
@@ -748,6 +873,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="272">
           <caret line="5" column="64" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="64" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#strong#0;n#h1#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -837,13 +967,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PlaywithNumbers/app/views/landing/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="272">
-          <caret line="5" column="64" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PlaywithNumbers/app/models/userlist.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="153">
@@ -917,29 +1040,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PlaywithNumbers/app/views/gameover/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="527">
-          <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
-          <folding>
-            <element signature="n#style#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#1;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PlaywithNumbers/app/views/inside/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.115385" vertical-offset="406" max-vertical-offset="1054">
-          <caret line="47" column="38" selection-start-line="47" selection-start-column="38" selection-end-line="47" selection-end-column="38" />
-          <folding>
-            <element signature="n#style#0;n#strong#0;n#span#0;n#label#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#3;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PlaywithNumbers/app/controllers/main_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238">
@@ -956,19 +1056,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PlaywithNumbers/app/assets/javascripts/application.js">
+    <entry file="file://$PROJECT_DIR$/PlaywithNumbers/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2407" max-vertical-offset="3060">
-          <caret line="161" column="5" selection-start-line="160" selection-start-column="8" selection-end-line="161" selection-end-column="5" />
+        <state vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="340">
+          <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PlaywithNumbers/app/views/main/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.846154" vertical-offset="219" max-vertical-offset="1411">
-          <caret line="31" column="10" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
+        <state vertical-scroll-proportion="-5.8846154" vertical-offset="408" max-vertical-offset="1411">
+          <caret line="33" column="47" selection-start-line="33" selection-start-column="47" selection-end-line="33" selection-end-column="47" />
           <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#strong#0;n#h1#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#strong#0;n#span#0;n#label#0;n#div#1;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#strong#0;n#span#0;n#label#1;n#div#1;n#div#0;n#!!top" expanded="true" />
@@ -978,18 +1080,61 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PlaywithNumbers/app/views/layouts/application.html.erb">
+    <entry file="file://$PROJECT_DIR$/PlaywithNumbers/app/views/gameover/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="340">
-          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
-          <folding />
+        <state vertical-scroll-proportion="-8.5" vertical-offset="0" max-vertical-offset="527">
+          <caret line="13" column="133" selection-start-line="13" selection-start-column="133" selection-end-line="13" selection-end-column="133" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#strong#0;n#h1#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#strong#0;n#h1#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#strong#0;n#h1#0;n#div#2;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#2;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#1;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PlaywithNumbers/app/views/landing/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.2692308" vertical-offset="0" max-vertical-offset="272">
+          <caret line="5" column="50" selection-start-line="5" selection-start-column="50" selection-end-line="5" selection-end-column="50" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#strong#0;n#h1#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PlaywithNumbers/app/views/inside/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1054">
+          <caret line="0" column="140" selection-start-line="0" selection-start-column="140" selection-end-line="0" selection-end-column="140" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#strong#0;n#h1#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#strong#0;n#span#0;n#label#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#1;n#div#0;n#div#4;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PlaywithNumbers/app/assets/stylesheets/application.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.62974685" vertical-offset="95" max-vertical-offset="3145">
-          <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="425" max-vertical-offset="3298">
+          <caret line="41" column="17" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PlaywithNumbers/app/assets/javascripts/application.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.710443" vertical-offset="2407" max-vertical-offset="3060">
+          <caret line="185" column="0" selection-start-line="185" selection-start-column="0" selection-end-line="185" selection-end-column="0" />
           <folding />
         </state>
       </provider>

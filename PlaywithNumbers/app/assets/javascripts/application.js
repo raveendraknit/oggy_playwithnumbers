@@ -174,7 +174,7 @@ playwithNumberApp.controller("gameoverController", function($scope, $window){
                  url: "/api/userlists/savescore.json",
                  data: { name: $("#newUser").val(), score: $("#score").val()},
                  success: function (e) {
-                     alert("Congratulations !");
+                     alert("your score save successfully !");
                      $window.location.href = '/main';
                  },
                  error: function () {

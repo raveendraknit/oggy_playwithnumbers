@@ -18,8 +18,13 @@
 
 
 body{
-    background: #333333 !important;
+
 }
+
+.background-img{
+    background: url("ogg_bg.jpg");
+}
+
 h1, i{
     color: #ffffff !important;
 }
@@ -27,6 +32,10 @@ h1, i{
     width: 500px;
     height: 600px;
     margin: 50px auto;
+    box-shadow: -17px 20px 35px #111111;
+    border-radius: 10px;
+    background: url("background-ingame.jpg");
+
 }
 
 .number{
@@ -63,7 +72,7 @@ button > i {
 }
 .btn-main  > i {
     font-size: 20px;
-    color: #730E15 !important;
+    /*color: #730E15 !important;*/
 }
 
 .countdown{

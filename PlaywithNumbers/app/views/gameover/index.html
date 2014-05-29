@@ -1,17 +1,17 @@
-<div data-ng-controller="gameoverController" class="LandingPage text-center" style="border: 1px solid #FFFFBF;background: #111;">
+<div data-ng-controller="gameoverController" class="LandingPage text-center" style="border: 1px solid #FFFFBF;">
     <div class="row">
-        <h1><strong>PLAY WITH NUMBERS</strong></h1>
+        <h1><strong style="color: #175199 !important;">PLAY WITH NUMBERS</strong></h1>
     </div>
 
     <div class="row">
         <h1><strong style="color: green">GAME OVER</strong></h1>
     </div>
     <div class="row" style="margin: 25px">
-        <h1><strong style="color: wheat">Your score</strong></h1>
+        <h1><strong style="color: #175199">Your score</strong></h1>
         <p style="font-size: 70px;">{{ score }}</p>
     </div>
     <input type="hidden" value="{{ score }}" id="score">
-    <input type="text" class="form-control" style="width: 300px;margin: 0px 108px;text-align: center;" placeholder="Enter your name here !" id="newUser">
+    <input type="text" class="form-control" style="width: 300px;margin: 0px 108px;text-align: center; border: 1px solid darkslategray" placeholder="Enter your name here !" id="newUser">
     <div class="row">
         <button class="play-again-icon-game btn btn-warning" ng-click="playagain();">
             <i class="fa fa-play"></i>
