@@ -119,6 +119,9 @@ playwithNumberApp.controller('NumberController', function($scope, $window, $time
         $scope.Operation2numbers = ($scope.numb1 + $scope.numb2);
         if ($scope.Operation2numbers == $scope.numb3) {
             $scope.current_score ++;
+            if ($scope.current_score ==5){
+                $window.location.href = '/levelup/' + $scope.current_score;
+            }
             $scope.numb1 = generateARandomNumber(1,9);
             $scope.numb2 = generateARandomNumber(1,9);
             $scope.numb3 = generateARandomNumber3(1,18);
@@ -134,6 +137,9 @@ playwithNumberApp.controller('NumberController', function($scope, $window, $time
         $scope.Operation2numbers = ($scope.numb1 + $scope.numb2);
         if($scope.Operation2numbers != $scope.numb3){
             $scope.current_score ++;
+            if ($scope.current_score ==5){
+                $window.location.href = '/levelup/' + $scope.current_score;
+            }
             $scope.numb1 = generateARandomNumber(1,9);
             $scope.numb2 = generateARandomNumber(1,9);
             $scope.numb3 = generateARandomNumber3(1,18);
@@ -188,4 +194,8 @@ playwithNumberApp.controller("gameoverController", function($scope, $window){
             alert("share")
     }
 
+});
+playwithNumberApp.controller("levelUpController", function($scope, $window){
+    currentURL = document.URL;
+    alert(currentURL);
 });
