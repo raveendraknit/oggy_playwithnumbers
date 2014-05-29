@@ -104,13 +104,13 @@ playwithNumberApp.controller('NumberController', function($scope, $window, $time
         if ($scope.timeInMs == 1) {
             $("div#progressbarcustomize").css({"width":"100%"});
         }
-        else if ($scope.timeInMs == 2222222222) {
+        else if ($scope.timeInMs == 2) {
             $("div#progressbarcustomize").css({"width":"0%"});
 
         }
         else{
             $cookies.scores = $scope.current_score;
-            //$window.location.href = '/gameover/'+$scope.current_score;
+            $window.location.href = '/gameover/'+$scope.current_score;
         }
     };
     $timeout(countUp, 1000);
@@ -124,15 +124,15 @@ playwithNumberApp.controller('NumberController', function($scope, $window, $time
             $scope.numb2 = generateARandomNumber(1,9);
             $scope.numb3 = generateARandomNumber3(1,18);
             $scope.timeoff = 0;
-           if($scope.current_score == 10){
+           if($scope.current_score == 20){
                  $( "div.score-level-up" ).addClass("score-level-up-active");
                   $scope.level_current = 1;
             }
-            else if($scope.current_score == 20){
+            else if($scope.current_score == 30){
                  $( "div.score-level-up" ).addClass("score-level-up-active");
                   $scope.level_current = 2;
             }
-            else if($scope.current_score == 30){
+            else if($scope.current_score == 60){
                  $( "div.score-level-up" ).addClass("score-level-up-active");
                   $scope.level_current = 3;
             }
@@ -159,11 +159,11 @@ playwithNumberApp.controller('NumberController', function($scope, $window, $time
                  $( "div.score-level-up" ).addClass("score-level-up-active");
                   $scope.level_current = 1;
             }
-            else if($scope.current_score == 20){
+            else if($scope.current_score == 30){
                  $( "div.score-level-up" ).addClass("score-level-up-active");
                   $scope.level_current = 2;
             }
-            else if($scope.current_score == 30){
+            else if($scope.current_score == 60){
                  $( "div.score-level-up" ).addClass("score-level-up-active");
                   $scope.level_current = 3;
             }

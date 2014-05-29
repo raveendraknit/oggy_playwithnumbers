@@ -231,8 +231,8 @@ table td{
 .score-level-current{
     position: absolute;
     top:100px;
-    left: 250px;
-    font-size: 80px;
+    left: 150px;
+    font-size: 40px;
     color: #ffffff;
 }
 
