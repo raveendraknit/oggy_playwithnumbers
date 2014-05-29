@@ -2,11 +2,9 @@ class MainController < ApplicationController
 
   def index
 
-    @userlists = Userlist.all
-    respond_to do |format|
-      format.html # index.html.erb
-      format.json { render json: @userlists }
-    end
+    @userlists = Userlist.find(:all, :order => 'score desc, created_at asc', :limit => 10)
+
+    
 
   end
 
