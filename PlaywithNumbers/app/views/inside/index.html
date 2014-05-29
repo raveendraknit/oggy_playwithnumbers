@@ -43,7 +43,7 @@
     <div class="countdown">
         <div class="score-table">
         <br>
-             <p>BEST SCORE: </>
+             <p>BEST SCORE: </p>
             <% @userlists.each do |bestscore| %>
              <p style="margin-top: -20px"><%= bestscore.score %></p>
             <% end %>
@@ -53,4 +53,7 @@
             <p>SCORE: {{ current_score }}</p>
         </div>
     </div>
+<div class="score-level-up "></div>
+<div class="score-level-current">{{ level_current }}</div>
 </div>
+

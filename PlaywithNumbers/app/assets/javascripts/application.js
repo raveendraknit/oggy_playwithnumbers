@@ -89,6 +89,7 @@ playwithNumberApp.controller("playgameController", function($scope, $window, $ti
 playwithNumberApp.controller('NumberController', function($scope, $window, $timeout, $cookies){
 
     $scope.current_score = 0;
+    $scope.level_current = 0;
 
     $scope.numb1 = generateARandomNumber(1,9);
     $scope.numb2 = generateARandomNumber(1,9);
@@ -103,53 +104,79 @@ playwithNumberApp.controller('NumberController', function($scope, $window, $time
         if ($scope.timeInMs == 1) {
             $("div#progressbarcustomize").css({"width":"100%"});
         }
-        else if ($scope.timeInMs == 2) {
+        else if ($scope.timeInMs == 2222222222) {
             $("div#progressbarcustomize").css({"width":"0%"});
 
         }
         else{
             $cookies.scores = $scope.current_score;
-            $window.location.href = '/gameover/'+$scope.current_score;
+            //$window.location.href = '/gameover/'+$scope.current_score;
         }
     };
     $timeout(countUp, 1000);
-
-//handle
     $scope.returnTrue = function () {
 
         $scope.timeInMs = 0;
         $scope.Operation2numbers = ($scope.numb1 + $scope.numb2);
         if ($scope.Operation2numbers == $scope.numb3) {
             $scope.current_score ++;
-            if ($scope.current_score ==5){
-                $window.location.href = '/levelup/' + $scope.current_score;
-            }
             $scope.numb1 = generateARandomNumber(1,9);
             $scope.numb2 = generateARandomNumber(1,9);
             $scope.numb3 = generateARandomNumber3(1,18);
+            $scope.timeoff = 0;
+           if($scope.current_score == 10){
+                 $( "div.score-level-up" ).addClass("score-level-up-active");
+                  $scope.level_current = 1;
+            }
+            else if($scope.current_score == 20){
+                 $( "div.score-level-up" ).addClass("score-level-up-active");
+                  $scope.level_current = 2;
+            }
+            else if($scope.current_score == 30){
+                 $( "div.score-level-up" ).addClass("score-level-up-active");
+                  $scope.level_current = 3;
+            }
+            else{
+                $( "div.score-level-up" ).removeClass("score-level-up-active");
+            }
         }
         else
         {
-            $window.location.href = '/gameover/'+$scope.current_score;
+            $window.location.href = '/gameover/' + $scope.current_score;
         }
     };
-    //
     $scope.returnFalse = function () {
         $scope.timeInMs = 0;
         $scope.Operation2numbers = ($scope.numb1 + $scope.numb2);
         if($scope.Operation2numbers != $scope.numb3){
             $scope.current_score ++;
-            if ($scope.current_score ==5){
-                $window.location.href = '/levelup/' + $scope.current_score;
-            }
+            
             $scope.numb1 = generateARandomNumber(1,9);
             $scope.numb2 = generateARandomNumber(1,9);
             $scope.numb3 = generateARandomNumber3(1,18);
+
+            if($scope.current_score == 10){
+                 $( "div.score-level-up" ).addClass("score-level-up-active");
+                  $scope.level_current = 1;
+            }
+            else if($scope.current_score == 20){
+                 $( "div.score-level-up" ).addClass("score-level-up-active");
+                  $scope.level_current = 2;
+            }
+            else if($scope.current_score == 30){
+                 $( "div.score-level-up" ).addClass("score-level-up-active");
+                  $scope.level_current = 3;
+            }
+            else{
+                $( "div.score-level-up" ).removeClass("score-level-up-active");
+            }
         }
         else{
-            $window.location.href = '/gameover/'+$scope.current_score;
+            $window.location.href = '/gameover/' + $scope.current_score;
         }
     };
+
+    
 
 });
 
@@ -197,8 +224,4 @@ playwithNumberApp.controller("gameoverController", function($scope, $window, $co
             alert("share")
     }
 
-});
-playwithNumberApp.controller("levelUpController", function($scope, $window){
-    currentURL = document.URL;
-    alert(currentURL);
 });
