@@ -32,8 +32,7 @@ h1, i{
 .number{
     color: wheat;
     font-size: 60px;
-    float: left;
-    margin: 0 18px;
+    margin: 0 15px;
     padding-top: 35px;
 }
 button{
@@ -86,7 +85,11 @@ button > i {
 .score-table{
     height: 79px;
     background: #111111;
-    padding: 20px 15px;
+    padding: 0px 15px;
+}
+
+strong{
+    margin: 10px 4px;
 }
 
 /*Popup-score*/
@@ -97,6 +100,7 @@ button > i {
     height: 550px;
     margin: 75px 50px;
     visibility: hidden;
+    border: 10px dotted #ffb830;
 }
 
 .popup-on{
@@ -112,8 +116,8 @@ button > i {
     border: 2px solid #ffffff;
     border-radius: 40px;
     right: 0;
-    top: -10px;
-    right: -10px;
+    top: -30px;
+    right: -30px;
     visibility: hidden;
 }
 .btn-show{
@@ -131,6 +135,7 @@ button > i {
     height: 550px;
     margin: 75px 50px;
     visibility: hidden;
+    border: 10px dotted #5353d0;
 }
 
 .popup-help-on{
@@ -153,4 +158,23 @@ button > i {
     width: 40px;
     height: 40px;
     visibility: visible;
+}
+/*SCORE TABLE*/
+.title-score{
+    font-size: 35px;
+    color: #5471ec;
+    margin: 30px auto;
+    font-weight: bold;
+    font-family: "Shadows Into Light", cursive;
+}
+table{
+    margin: 5px auto;
+    font-weight: bold;
+    font-family: "Lucida Grande", "Bitstream Vera Sans", "Verdana";
+}
+table td{
+    font-size: 25px;
+    padding-right: 50px;
+    padding-left: 45px;
+    border-bottom: 1px solid #7bc842;
 }

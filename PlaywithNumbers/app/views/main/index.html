@@ -3,10 +3,10 @@
         <h1><strong>PLAY WITH NUMBERS</strong></h1>
     </div>
 
-    <div class="row" style="margin-top: 40px; margin-bottom: 60px; height:110px; background: #111111; border: 1px solid #FFFFBF; border-bottom: 6px groove #FFFFBF ">
+    <div class="row" style="margin-top: 40px; margin-bottom: 30px; text-align: center; height:155px; background: #111111; border: 1px solid #FFFFBF; border-bottom: 6px groove #FFFFBF ">
         <label class="number">
             <span>
-                <strong style="color: #379914; margin-left:45px">2</strong>
+                <strong style="color: #379914;">2</strong>
             </span>
         </label>
         <label class="number">
@@ -30,8 +30,6 @@
             </span>
         </label>
     </div>
-
-
     <div class="row">
         <button class="play-icon-game btn btn-warning" ng-click="letsgo()">
            <i class="fa fa-play"></i>
@@ -60,32 +58,20 @@
             <div class="popup-close" ng-click="removeClasspopup()">
                 <i class="fa fa-minus" style="font-size: 25px;margin-top: 9px;"></i>
             </div>
-
+    <p class="title-score">TOP TEN</p>
         <table>
-            <tr>
-                <th>Name</th>
-                <th>Score</th>
-                <th></th>
-                <th></th>
-                <th></th>
-            </tr>
-
             <% @userlists.each do |userlist| %>
             <tr>
-                <td><%= userlist.name %></td>
+                <td><%= userlist.name %> </td>
                 <td><%= userlist.score %></td>
-
             </tr>
             <% end %>
         </table>
-
     </div>
-
     <div class="popup-help">
         <div class="popup-help-close" ng-click="removeClasspopuphelp()">
             <i class="fa fa-minus" style="font-size: 25px;margin-top: 9px;"></i>
         </div>
-
-        HELP
+        <p class="title-score">HOW TO PLAY</p>
     </div>
 </div>

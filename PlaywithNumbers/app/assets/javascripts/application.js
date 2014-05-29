@@ -102,9 +102,12 @@ playwithNumberApp.controller('NumberController', function($scope, $window, $time
         if ($scope.timeInMs == 1) {
             $("div#progressbarcustomize").css({"width":"100%"});
         }
-        else if ($scope.timeInMs == 2) {
+        else if ($scope.timeInMs == 2111111111111111111) {
             $("div#progressbarcustomize").css({"width":"0%"});
-            $window.location.href = '/gameover/'+$scope.current_score;
+
+        }
+        else{
+            //$window.location.href = '/gameover/'+$scope.current_score;
         }
     };
     $timeout(countUp, 1000);
@@ -171,7 +174,8 @@ playwithNumberApp.controller("gameoverController", function($scope, $window){
                  url: "/api/userlists/savescore.json",
                  data: { name: $("#newUser").val(), score: $("#score").val()},
                  success: function (e) {
-                     alert(e.result.name + ":" + e.result.score);
+                     alert("Congratulations !");
+                     $window.location.href = '/main';
                  },
                  error: function () {
                      alert("error . . . ");

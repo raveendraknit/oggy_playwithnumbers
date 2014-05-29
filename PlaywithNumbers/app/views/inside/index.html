@@ -6,7 +6,7 @@
 
         <label class="number" style="margin-left:75px;">
             <span>
-                <strong>{{ numb1 }}</strong>
+                <strong style="margin-left: -40px">{{ numb1 }}</strong>
             </span>
         </label>
         <label class="number">
@@ -35,7 +35,7 @@
         <button class="btn btn-danger" ng-click="returnFalse()"><i class="fa fa-thumbs-o-down"></i> </button>
     </div>
 
-    <div class="row" style="margin-top:185px;margin-left: 0px; margin-right: 0px;">
+    <div class="row" style="margin-top:117px;margin-left: 0px; margin-right: 0px;">
         <div class="progress progress-striped active ">
             <div class="progress-bar" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" id="progressbarcustomize"><span class="sr-only">45% Complete</span></div>
         </div>
@@ -45,7 +45,7 @@
         <br>
              <p>BEST SCORE: </>
             <% @userlists.each do |bestscore| %>
-             <p><%= bestscore.score %></p>
+             <p style="margin-top: -20px"><%= bestscore.score %></p>
             <% end %>
         </div>
         <div class="score-table">
