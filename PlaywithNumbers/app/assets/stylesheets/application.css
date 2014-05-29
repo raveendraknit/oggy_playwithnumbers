@@ -126,6 +126,7 @@ strong{
     border-radius: 40px;
     right: 0;
     top: -30px;
+    cursor: pointer;
     right: -30px;
     visibility: hidden;
 }
@@ -161,6 +162,7 @@ strong{
     right: 0;
     top: -30px;
     right: -30px;
+    cursor: pointer;
     visibility: hidden;
 }
 .btn-help-show{
