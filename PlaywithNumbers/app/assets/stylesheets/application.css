@@ -91,16 +91,21 @@ button > i {
 
 /*Popup-score*/
 .popup-score{
+    position: absolute;
+    top: 5px;
     width: 400px;
-    height: 0px;
-    top:0px;
-    bottom: 0px;
-    margin: 75px 80px;
-    left: 365px;
+    height: 550px;
+    margin: 75px 50px;
     visibility: hidden;
+}
 
+.popup-on{
+    visibility: visible;
+    transition: All 0.3s linear;
+    background: #ffffff;
 
 }
+
 .popup-close{
     position: absolute;
     background: #730E15;
@@ -116,29 +121,24 @@ button > i {
     height: 40px;
     visibility: visible;
 }
-.popup-on{
-    position: absolute;
-    visibility: visible;
-    width: 400px;
-    height: 550px;
-    margin: 75px 80px;
-    background: #ffffff;
-    transition: All 0.3s linear;
 
-}
 
 /*Popup-help*/
 .popup-help{
-        width: 400px;
-    height: 0px;
-    top:0px;
-    bottom: 0px;
-    margin: 75px 80px;
-    left: 365px;
+    position: absolute;
+    top: 5px;
+    width: 400px;
+    height: 550px;
+    margin: 75px 50px;
     visibility: hidden;
-
-
 }
+
+.popup-help-on{
+    visibility: visible;
+    transition: All 0.3s linear;
+    background: #ffffff;
+}
+
 .popup-help-close{
     position: absolute;
     background: #730E15;
@@ -153,14 +153,4 @@ button > i {
     width: 40px;
     height: 40px;
     visibility: visible;
-}
-.popup-help-on{
-    position: absolute;
-    visibility: visible;
-    width: 400px;
-    height: 550px;
-    margin: 75px 80px;
-    background: #ffffff;
-    transition: All 0.3s linear;
-
 }
