@@ -11,8 +11,10 @@
         <p style="font-size: 70px;">{{ score }}</p>
     </div>
     <input type="hidden" value="{{ score }}" id="score">
-    <input type="text" class="form-control" style="width: 300px;margin: 0px 108px;text-align: center; border: 1px solid darkslategray" placeholder="Enter your name here !" id="newUser">
-    <div class="row">
+    <div ng-class="{ 'has-error' : score.$invalid && submitted }">
+    <input type="text" class="form-control" name="score" onkeyup="this.value=this.value.replace(/^[0-9]*$/g, '')" ng-required="true" ng-minlength="2" ng-maxlength="255" style="width: 300px;margin: 0px 108px;text-align: center; border: 1px solid darkslategray" placeholder="Enter your name here !" id="newUser">
+    </div>
+        <div class="row">
         <button class="play-again-icon-game btn btn-warning" ng-click="playagain();">
             <i class="fa fa-play"></i>
         </button>

@@ -187,3 +187,7 @@ table td{
     padding-left: 45px;
     border-bottom: 1px solid #7bc842;
 }
+.error{
+    border: 1px solid darkred !important;
+    outline-color: #ff0000 !important;
+}
