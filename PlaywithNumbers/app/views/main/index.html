@@ -61,7 +61,9 @@
                 <i class="fa fa-minus" style="font-size: 25px;margin-top: 9px;"></i>
             </div>
 
-        <table>
+        
+            <% if @userlists %>
+            <table>
             <tr>
                 <th>Name</th>
                 <th>Score</th>
@@ -69,16 +71,19 @@
                 <th></th>
                 <th></th>
             </tr>
+                <% @userlists.each do |userlist| %>
+                <tr>
+                    <td><%= userlist.name %></td>
+                    <td><%= userlist.score %></td>
 
-            <% @userlists.each do |userlist| %>
-            <tr>
-                <td><%= userlist.name %></td>
-                <td><%= userlist.score %></td>
+                </tr>
+                <% end %>
+            </table>
+            <% else %>
+            No user in the list
 
-            </tr>
             <% end %>
-        </table>
-
+       
     </div>
 
     <div class="popup-help">
