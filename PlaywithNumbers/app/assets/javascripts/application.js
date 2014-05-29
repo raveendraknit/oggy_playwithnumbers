@@ -15,13 +15,14 @@
 //= require bootstrap
 //= require angular
 //= require angular-resource
+//= require angular-cookies
 //= require utilities
 
 //= require_tree .
 
 
 //Angular JS
-var playwithNumberApp = angular.module('PlaywithNumberApp',['ngResource']);
+var playwithNumberApp = angular.module('PlaywithNumberApp',['ngResource', 'ngCookies']);
 
 playwithNumberApp.controller("landingController", function($scope, $timeout, $window){
     $scope.timeInMs = 0;
@@ -85,7 +86,7 @@ playwithNumberApp.controller("playgameController", function($scope, $window, $ti
 
 });
 
-playwithNumberApp.controller('NumberController', function($scope, $window, $timeout){
+playwithNumberApp.controller('NumberController', function($scope, $window, $timeout, $cookies){
 
     $scope.current_score = 0;
 
@@ -107,6 +108,7 @@ playwithNumberApp.controller('NumberController', function($scope, $window, $time
 
         }
         else{
+            $cookies.scores = $scope.current_score;
             $window.location.href = '/gameover/'+$scope.current_score;
         }
     };
@@ -146,7 +148,7 @@ playwithNumberApp.controller('NumberController', function($scope, $window, $time
 });
 
 
-playwithNumberApp.controller("gameoverController", function($scope, $window){
+playwithNumberApp.controller("gameoverController", function($scope, $window, $cookies){
 
     $scope.playagain = function(){
         $window.location.href = '/inside'
@@ -154,6 +156,7 @@ playwithNumberApp.controller("gameoverController", function($scope, $window){
     var url = window.location;
 
     $scope.score = url.toString().split("/")[4];
+
 
     if($scope.score == "null"){
         $scope.score = 0

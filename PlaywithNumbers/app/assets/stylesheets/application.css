@@ -155,12 +155,12 @@ strong{
 
 .popup-help-close{
     position: absolute;
-    background: #730E15;
+    background: rgb(115, 14, 21);
     border: 2px solid #ffffff;
     border-radius: 40px;
     right: 0;
-    top: -10px;
-    right: -10px;
+    top: -30px;
+    right: -30px;
     visibility: hidden;
 }
 .btn-help-show{
@@ -190,4 +190,21 @@ table td{
 .error{
     border: 1px solid darkred !important;
     outline-color: #ff0000 !important;
+}
+
+.content-htp{
+    font-size: 17px;
+    color: #730E15;
+    margin: 30px auto;
+    font-weight: bold;
+    font-family: "Shadows Into Light", cursive;
+}
+.mid{
+    margin-top: 40px;
+    margin-bottom: 30px;
+    text-align: center;
+    height:155px;
+    background: url("logo-ogg-game.jpg");
+    border: 1px solid #FFFFBF;
+    border-bottom: 6px groove #FFFFBF
 }
