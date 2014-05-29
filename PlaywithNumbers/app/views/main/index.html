@@ -32,7 +32,7 @@
     </div>
     <div class="row">
         <button class="play-icon-game btn btn-danger" ng-click="letsgo()">
-           <i class="fa fa-play"></i>
+            <i class="fa fa-play"></i>
         </button>
     </div>
 
@@ -55,10 +55,10 @@
         </button>
     </div>
     <div class="popup-score">
-            <div class="popup-close" ng-click="removeClasspopup()">
-                <i class="fa fa-minus" style="font-size: 25px;margin-top: 9px;"></i>
-            </div>
-    <p class="title-score">TOP TEN</p>
+        <div class="popup-close" ng-click="removeClasspopup()">
+            <i class="fa fa-minus" style="font-size: 25px;margin-top: 9px;"></i>
+        </div>
+        <p class="title-score">TOP TEN</p>
         <table>
             <% @userlists.each do |userlist| %>
             <tr>
@@ -67,6 +67,7 @@
             </tr>
             <% end %>
         </table>
+
     </div>
     <div class="popup-help">
         <div class="popup-help-close" ng-click="removeClasspopuphelp()">
