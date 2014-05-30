@@ -1,0 +1,3 @@
+class WinController < ApplicationController
+
+end

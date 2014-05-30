@@ -136,6 +136,9 @@ playwithNumberApp.controller('NumberController', function($scope, $window, $time
                  $( "div.score-level-up" ).addClass("score-level-up-active");
                   $scope.level_current = "Level 3";
             }
+           else if($scope.current_score == 75){
+               $window.location.href = '/WIN/'
+           }
             else{
                 $( "div.score-level-up" ).removeClass("score-level-up-active");
             }
@@ -166,6 +169,9 @@ playwithNumberApp.controller('NumberController', function($scope, $window, $time
             else if($scope.current_score == 60){
                  $( "div.score-level-up" ).addClass("score-level-up-active");
                 $scope.level_current = "Level 3";
+            }
+            else if($scope.current_score == 75){
+                $window.location.href = '/WIN/'
             }
             else{
                 $( "div.score-level-up" ).removeClass("score-level-up-active");

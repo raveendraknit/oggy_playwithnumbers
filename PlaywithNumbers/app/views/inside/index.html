@@ -1,6 +1,6 @@
-<div data-ng-controller="NumberController" class="LandingPage text-center" style="border: 1px solid #FFFFBF; background: #111111 !important;">
+<div data-ng-controller="NumberController" class="LandingPage text-center" style="border: 1px solid #FFFFBF;">
     <div class="row">
-        <h1><strong style="color: #175199; opacity: 0.3">PLAY WITH NUMBERS</strong></h1>
+        <h1><strong style="color: #129fcd; opacity: 0.1">PLAY WITH NUMBERS</strong></h1>
     </div>
     <div class="row" style="margin-top: 80px; margin-bottom: 60px">
 
@@ -43,12 +43,13 @@
     <div class="countdown">
         <div class="score-table">
         <br>
-             <p>BEST SCORE: </p>
-            <% @userlists.each do |bestscore| %>
-             <p style="margin-top: -20px"><%= bestscore.score %></p>
-            <% end %>
-        </div>
-        <div class="score-table">
+             <p>BEST SCORE:
+                 <% @userlists.each do |bestscore| %>
+                 <%= bestscore.score %>
+                 <% end %>
+
+             </p>
+
         <br>
             <p>SCORE: {{ current_score }}</p>
         </div>
