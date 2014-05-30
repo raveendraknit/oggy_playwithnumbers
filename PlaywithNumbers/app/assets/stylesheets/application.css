@@ -39,6 +39,9 @@ h1, i{
 
 }
 
+
+
+
 .number{
     color: #000000;
     font-size: 60px;
@@ -261,4 +264,10 @@ table td{
     background: red;
     width: 400px;
     height: 400px;
+}
+
+
+.fb-like{
+    height: 20px;
+    overflow: hidden;
 }
