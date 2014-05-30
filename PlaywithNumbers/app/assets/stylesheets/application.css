@@ -67,10 +67,30 @@ button > i {
     margin-bottom: -85px !important;
 }
 
+
 .btn-main{
     width: 75px;
     height: 45px;
 }
+
+.btn-main:hover{
+    width: 75px;
+    height: 45px;
+}
+
+
+.btn-face{
+    width: 75px;
+    height: 45px;
+    background: -webkit-linear-gradient(#4c69ba, #3b55a0) !important;
+}
+
+.btn-face:hover{
+    width: 75px;
+    height: 45px;
+    background: -webkit-linear-gradient(#4c69ba, #3b55a0) !important;
+}
+
 .btn-main  > i {
     font-size: 20px;
     /*color: #730E15 !important;*/
@@ -232,7 +252,13 @@ table td{
     position: absolute;
     top:100px;
     left: 150px;
+    font-family: fantasy;
     font-size: 40px;
     color: #ffffff;
 }
 
+.fb-like-custom{
+    background: red;
+    width: 400px;
+    height: 400px;
+}

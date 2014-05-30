@@ -12,7 +12,7 @@
     </div>
     <input type="hidden" value="{{ score }}" id="score">
     <div ng-class="{ 'has-error' : score.$invalid && submitted }">
-    <input type="text" class="form-control" name="score" onkeyup="this.value=this.value.replace(/^[0-9]*$/g, '')" ng-required="true" maxlength="10" style="width: 300px;margin: 0px 108px;text-align: center; border: 1px solid darkslategray" placeholder="Enter your name here !" id="newUser">
+    <input type="text" class="form-control" name="score" onkeyup="" ng-required="true" maxlength="10" style="width: 300px;margin: 0px 108px;text-align: center; border: 1px solid darkslategray" placeholder="Enter your name here !" id="newUser">
     </div>
         <div class="row">
         <button class="play-again-icon-game btn btn-warning" ng-click="playagain();">
@@ -21,8 +21,19 @@
         <button class="play-again-icon-game btn btn-info" ng-click="savescore();">
             <i class="fa fa-save"></i>
         </button>
-        <button class="play-again-icon-game btn btn-primary" ng-click="sharefacebook();">
-            <i class="fa fa-share-alt "></i>
+            <script>
+                (function(d, s, id) {
+                    var js, fjs = d.getElementsByTagName(s)[0];
+                    if (d.getElementById(id)) return;
+                    js = d.createElement(s); js.id = id;
+                    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=488265594607259&version=v2.0";
+                    fjs.parentNode.insertBefore(js, fjs);
+                }(document, 'script', 'facebook-jssdk'));
+            </script>
+        <button class="play-again-icon-game btn btn-primary">
+            <a id="fb-share" style='text-decoration:none;' type="icon_link" onClick="window.open('http://www.facebook.com/sharer.php?s=100&amp;p[title]=foo&amp;p[summary]=bar&amp;p[url]=https://apps.facebook.com/play-with-numbers/&amp;p[images][0]=https://www.foobar.com/thumb.gif','sharer','toolbar=0,status=0,width=580,height=325');" href="javascript: void(0)">
+                <i class="fa fa-share-alt" style="font-size: 40px"></i>
+            </a>
         </button>
     </div>
 </div>

@@ -89,7 +89,7 @@ playwithNumberApp.controller("playgameController", function($scope, $window, $ti
 playwithNumberApp.controller('NumberController', function($scope, $window, $timeout, $cookies){
 
     $scope.current_score = 0;
-    $scope.level_current = 0;
+    $scope.level_current = "";
 
     $scope.numb1 = generateARandomNumber(1,9);
     $scope.numb2 = generateARandomNumber(1,9);
@@ -126,15 +126,15 @@ playwithNumberApp.controller('NumberController', function($scope, $window, $time
             $scope.timeoff = 0;
            if($scope.current_score == 20){
                  $( "div.score-level-up" ).addClass("score-level-up-active");
-                  $scope.level_current = 1;
+                  $scope.level_current = "Level 1";
             }
             else if($scope.current_score == 30){
                  $( "div.score-level-up" ).addClass("score-level-up-active");
-                  $scope.level_current = 2;
+                  $scope.level_current = "Level 2";
             }
             else if($scope.current_score == 60){
                  $( "div.score-level-up" ).addClass("score-level-up-active");
-                  $scope.level_current = 3;
+                  $scope.level_current = "Level 3";
             }
             else{
                 $( "div.score-level-up" ).removeClass("score-level-up-active");
@@ -157,15 +157,15 @@ playwithNumberApp.controller('NumberController', function($scope, $window, $time
 
             if($scope.current_score == 10){
                  $( "div.score-level-up" ).addClass("score-level-up-active");
-                  $scope.level_current = 1;
+                $scope.level_current = "Level 1";
             }
             else if($scope.current_score == 30){
                  $( "div.score-level-up" ).addClass("score-level-up-active");
-                  $scope.level_current = 2;
+                $scope.level_current = "Level 2";
             }
             else if($scope.current_score == 60){
                  $( "div.score-level-up" ).addClass("score-level-up-active");
-                  $scope.level_current = 3;
+                $scope.level_current = "Level 3";
             }
             else{
                 $( "div.score-level-up" ).removeClass("score-level-up-active");
@@ -221,7 +221,7 @@ playwithNumberApp.controller("gameoverController", function($scope, $window, $co
      };
 
     $scope.sharefacebook = function(){
-            alert("share")
+
     }
 
 });
